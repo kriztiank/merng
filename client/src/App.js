@@ -1,7 +1,8 @@
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
 import Header from './components/Header'
 import Clients from './components/Clients'
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
+import Projects from './components/Projects'
 // import Home from './pages/Home'
 // import Project from './pages/Project'
 // import NotFound from './pages/NotFound'
@@ -39,6 +40,7 @@ function App() {
         <Header />
         <div className='container'>
           <AddClientModal />
+          <Projects />
           <Clients />
         </div>
       </ApolloProvider>
